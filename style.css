@@ -17,3 +17,7 @@
 .section4 {
 	background-color: #d4f2ff;
 }
+
+.card, .card-img-top {
+	border-radius: 0;
+}
