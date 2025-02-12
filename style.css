@@ -21,3 +21,7 @@
 .card, .card-img-top {
 	border-radius: 0;
 }
+
+.card {
+	border: 0;
+}
