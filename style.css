@@ -21,3 +21,19 @@
 .card {
 	border: 0;
 }
+
+/* CSS untuk card dan gambar */
+.card-img-top {
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gambar */
+}
+
+.card-hover:hover .card-img-top {
+    transform: scale(1.1); /* Membesarkan gambar saat hover */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2); /* Efek bayangan saat hover */
+}
+
+.card-hover {
+    overflow: hidden; /* Menghindari gambar keluar dari card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada card */
+    transition: box-shadow 0.3s ease; /* Transisi bayangan card */
+}
