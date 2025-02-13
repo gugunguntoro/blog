@@ -38,3 +38,36 @@
     transition: box-shadow 0.3s ease; /* Transisi bayangan card */
 }
 
+
+/* SALJU  */
+	.snowflake {
+	  position: fixed; /* Salju tetap terlihat saat scroll */
+	  top: -10px;
+	  background-color: white;
+	  border-radius: 50%;
+	  opacity: 0.9;
+	  pointer-events: none;
+	  animation: fall linear infinite;
+	}
+
+	@keyframes fall {
+	  0% {
+	    transform: translateY(0);
+	  }
+	  100% {
+	    transform: translateY(100vh);
+	  }
+	}
+
+	/* Variasi ukuran dan kecepatan salju */
+	.snowflake:nth-child(odd) {
+	  animation-duration: 25s;
+	  animation-timing-function: ease-in;
+	}
+
+	.snowflake:nth-child(even) {
+	  animation-duration: 12s;
+	  animation-timing-function: ease-out;
+	}
+
+/* PENUTUP SALJU */

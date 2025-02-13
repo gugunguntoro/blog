@@ -10,6 +10,7 @@
   </head>
   <body>
 
+     
 
     <div class="container">
       <div class="row">
@@ -103,8 +104,41 @@
       <!-- PENUTUP GAMBAR BARIS 3 -->
     </div>
 
+    <audio autoplay muted hidden src="lethergo.mp3"></audio>
+
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+    // Fungsi untuk membuat salju
+    function generateSnowflakes() {
+      const numSnowflakes = 50; // Jumlah salju yang lebih banyak
+      for (let i = 0; i < numSnowflakes; i++) {
+        let snowflake = document.createElement('div');
+        snowflake.classList.add('snowflake');
+        
+        // Atur posisi acak
+        snowflake.style.left = Math.random() * window.innerWidth + 'px';
+        snowflake.style.animationDuration = Math.random() * (20 - 5) + 5 + 's'; // Durasi yang lebih lama
+        snowflake.style.animationDelay = Math.random() * 10 + 's'; // Penundaan acak
+        snowflake.style.width = Math.random() * 5 + 5 + 'px';
+        snowflake.style.height = snowflake.style.width;
+        
+        document.body.appendChild(snowflake);
+      }
+    }
+
+    // Fungsi untuk membuat salju terus-menerus
+    function createSnowContinuously() {
+      setInterval(generateSnowflakes, 2000); // Setiap 2 detik, tambahkan salju baru
+    }
+
+    // Panggil fungsi untuk menghasilkan salju saat halaman dimuat
+    window.onload = function() {
+      generateSnowflakes(); // Pertama kali salju dibuat
+      createSnowContinuously(); // Terus membuat salju
+    };
+  </script>
   </body>
 </html>
