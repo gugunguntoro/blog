@@ -39,35 +39,19 @@
 }
 
 
-/* SALJU  */
-	.snowflake {
-	  position: fixed; /* Salju tetap terlihat saat scroll */
-	  top: -10px;
-	  background-color: white;
-	  border-radius: 50%;
-	  opacity: 0.9;
-	  pointer-events: none;
-	  animation: fall linear infinite;
-	}
 
-	@keyframes fall {
-	  0% {
-	    transform: translateY(0);
-	  }
-	  100% {
-	    transform: translateY(100vh);
-	  }
-	}
 
-	/* Variasi ukuran dan kecepatan salju */
-	.snowflake:nth-child(odd) {
-	  animation-duration: 25s;
-	  animation-timing-function: ease-in;
-	}
+audio {
+            width: 100%;
+            height: 35px;
+            background-color: white;
+            padding: 0px;
+            border-radius: 0px;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            border: 0px solid #ddd;
+            outline: none;
+}
 
-	.snowflake:nth-child(even) {
-	  animation-duration: 12s;
-	  animation-timing-function: ease-out;
-	}
-
-/* PENUTUP SALJU */
+audio::-webkit-media-controls-panel {
+            background-color: #fff; /* Panel background */
+}
