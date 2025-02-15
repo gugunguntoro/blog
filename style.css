@@ -22,6 +22,10 @@
 	border: 0;
 }
 
+.card-body {
+    padding: 0;
+}
+
 .col-6, .col-sm-6, .col-12, .col-md-6, .col-md-3 {
 /*    padding: 0.8px 0.4px 0px 0.4px;*/
 padding: 0;
@@ -35,6 +39,21 @@ padding: 0;
 .col-6-cs2 {
 padding-left: 0.4px;
 }
+
+.col-12-cs {
+    padding-bottom: 0.8px;
+}
+
+
+.col-6-msc1 {
+    padding-right: 6px;
+    padding-bottom: 10px;
+}
+
+.col-6-msc2 {
+padding-left: 6px;
+}
+
 
 
 
@@ -76,11 +95,15 @@ audio {
             background-color: white;
             padding: 0px;
             border-radius: 0px;
-/*            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);*/
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             border: 0px solid #ddd;
             outline: none;
 }
 
 audio::-webkit-media-controls-panel {
             background-color: #fff; /* Panel background */
+}
+
+.audio2 {
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
