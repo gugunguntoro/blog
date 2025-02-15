@@ -107,3 +107,7 @@ audio::-webkit-media-controls-panel {
 .audio2 {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
 }
+
+figure {
+    padding: 10px;
+}
