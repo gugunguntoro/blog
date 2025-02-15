@@ -22,6 +22,10 @@
 	border: 0;
 }
 
+.col-6, .col-sm-6, .col-12 {
+    padding: 1.2px;
+}
+
 /* CSS untuk card dan gambar */
 .card-img-top {
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gambar */
@@ -38,16 +42,21 @@
     transition: box-shadow 0.3s ease; /* Transisi bayangan card */
 }
 
+.card-body-music {
+    padding: 0;
+}
+
 
 
 
 audio {
             width: 100%;
+            padding: 0;
             height: 35px;
             background-color: white;
             padding: 0px;
             border-radius: 0px;
-            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
             border: 0px solid #ddd;
             outline: none;
 }

@@ -1,29 +1,19 @@
-// script.js
-const audio = document.getElementById('audio');
-const playPauseButton = document.querySelector('.play-pause');
-const progress = document.getElementById('progress');
-const volume = document.getElementById('volume');
+// Ambil semua elemen audio
+const audios = document.querySelectorAll('audio');
 
-function togglePlayPause() {
-    if (audio.paused) {
-        audio.play();
-        playPauseButton.textContent = 'Pause';
-    } else {
-        audio.pause();
-        playPauseButton.textContent = 'Play';
+// Fungsi untuk menghentikan semua audio yang sedang diputar
+function stopAllAudios(except) {
+  audios.forEach(audio => {
+    if (audio !== except && !audio.paused) {
+      audio.pause();
+      audio.currentTime = 0; // Mengatur audio ke awal
     }
+  });
 }
 
-audio.addEventListener('timeupdate', () => {
-    const progressValue = (audio.currentTime / audio.duration) * 100;
-    progress.value = progressValue;
+// Event listener untuk setiap elemen audio
+audios.forEach(audio => {
+  audio.addEventListener('play', () => {
+    stopAllAudios(audio); // Stop semua audio kecuali yang sedang dimainkan
+  });
 });
-
-function setProgress() {
-    const value = progress.value * audio.duration / 100;
-    audio.currentTime = value;
-}
-
-function setVolume() {
-    audio.volume = volume.value;
-}
