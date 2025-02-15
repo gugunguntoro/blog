@@ -22,9 +22,11 @@
 	border: 0;
 }
 
-.col-6, .col-sm-6, .col-12 {
+.col-6, .col-sm-6, .col-12, .col-md-6 {
     padding: 1.2px;
 }
+
+
 
 /* CSS untuk card dan gambar */
 .card-img-top {
@@ -56,7 +58,7 @@ audio {
             background-color: white;
             padding: 0px;
             border-radius: 0px;
-            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+/*            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);*/
             border: 0px solid #ddd;
             outline: none;
 }
