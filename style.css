@@ -20,16 +20,18 @@
 
 .card {
 	border: 0;
-    border-color: red;
 }
 
 .col-6, .col-sm-6, .col-12, .col-md-6, .col-md-3 {
-    padding: 0.8px 0.8px 0 0;
+    padding: 0.8px 0.8px 0px 0px;
 }
 
-.row {
-    padding-right: 0px;
-}
+
+
+
+
+
+
 
 
 
