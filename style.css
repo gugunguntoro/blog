@@ -40,10 +40,6 @@ padding: 0;
 padding-left: 0.4px;
 }
 
-.col-12-cs {
-/*    padding-top: 0.8px;*/
-}
-
 
 .col-6-msc1 {
     padding-right: 6px;
@@ -54,6 +50,12 @@ padding-left: 0.4px;
 .col-6-msc2 {
 padding-left: 6px;
 padding-right: 12px;
+}
+
+.col-12-msc {
+   padding-left: 12px;
+   padding-right: 12px;
+   padding-bottom: 8px; 
 }
 
 
