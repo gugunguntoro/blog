@@ -4,6 +4,7 @@ body {
     font-family: "EB Garamond", serif;
 }
 
+/* BUTTON */
 .btn {
     border-radius: 0;
     background-color: white;
@@ -16,10 +17,16 @@ body {
     background-color: black;
     color: white;
 }
+/*AKHIR BUTTON*/
 
-.btn:active {
-    background-color: red;
+.img-book {
+    padding-right: 12px;
 }
+
+.p-book {
+    text-align: justify;
+}
+
 
 
 
