@@ -4,6 +4,23 @@ body {
     font-family: "EB Garamond", serif;
 }
 
+.btn {
+    border-radius: 0;
+    background-color: white;
+    border: 0;
+    color: black;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada card */
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn:active {
+    background-color: red;
+}
+
 
 
 .navbar, .nav-link {
