@@ -17,3 +17,4 @@ audios.forEach(audio => {
     stopAllAudios(audio); // Stop semua audio kecuali yang sedang dimainkan
   });
 });
+

@@ -54,15 +54,25 @@
       <div class="row justify-content-center">
         <div class="col-sm-5 col-10 text-center">
           <p>
-            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+            <button class="btn" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i>Open Book</i>
             </button>
           </p>
           <div style="min-height: 100%;">
             
-            <div class="collapse" id="collapseWidthExample">
-              <div class="card card-book">
+          <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen">
+    <div class="modal-content">
+      <div class="modal-body">
+        <div class="row justify-content-center pt-3">
+          <div class="col-sm-3 col-10">
+             <div class="card card-book">
                 <img src="img/fall.jpg" class="img-fluid  ">
+              </div>
+          </div>
+          <div class="col-sm-8 col-10">
+                <div class="card card-book">
                 <div class="card-body card-body-book">
                   <p class="p-book">Siapa yang tidak mengenal Albert Camus? Seorang filsuf, penulis, sekaligus jurnalis Prancis yang di anugerahi Hadiah Nobel Sastra 1957 pada usia 44 tahun, menjadikannya penerima termuda kedua dalam sejarah. Ia menulis beberapa karya yang terkenal seperti, The Plague, The Myth of Sisyphus, The Fall, and The Rebel.
                 Salah satu, karya terakhir yang menjadi puncak karyanya pada tahun 1956 adalah The Fall. The Fall adalah sebuah novel filsafat karya Albert Camus dan merupakan karya fiksi yang terdiri dari serangkaian drama monolog (satu arah) dari "hakim-peniten" Jean-Baptiste Clamence, saat ia merefleksikan kehidupannya kepada orang aneh. Ia yang mengkritik kehidupan sosial dan berlatar di Amsterdam Belanda.
@@ -72,7 +82,16 @@
                 <a href="https://www.gramedia.com/products/the-fall?srsltid=AfmBOore_2sYkpjRFazdy8Am1gXNOA5k86Jv65vpK14D0NeI5EzL4hnR" class="text-decoration-none"><p class="text-start small">https://www.gramedia.com</p></a>
                 </div>
               </div>
-            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-center" style="border: 0;">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><i>Close Book</i></button>
+    </div>
+  </div>
+</div>
+            
+             
           </div>
         </div>
       </div>

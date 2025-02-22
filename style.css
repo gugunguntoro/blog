@@ -97,6 +97,11 @@ padding-right: 12px;
    padding-bottom: 8px; 
 }
 
+.col-4 {
+    padding: 5px;
+}
+
+
 
 
 
@@ -110,7 +115,7 @@ padding-right: 12px;
 
 /* CSS untuk card dan gambar */
 .card-img-top {
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gambar */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transisi untuk gambar  */
 }
 
 .card-hover:hover .card-img-top {
@@ -120,13 +125,15 @@ padding-right: 12px;
 
 .card-hover {
     overflow: hidden; /* Menghindari gambar keluar dari card */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada card */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Memberikan bayangan lembut pada card s*/
     transition: box-shadow 0.3s ease; /* Transisi bayangan card */
 }
 
 .card-body-music {
     padding: 0;
 }
+
+
 
 
 
@@ -154,3 +161,7 @@ audio::-webkit-media-controls-panel {
 figure {
     padding: 10px;
 }
+
+
+/**/
+ 
